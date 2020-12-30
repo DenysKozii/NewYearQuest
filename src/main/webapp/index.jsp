@@ -17,7 +17,7 @@
   --%>
 <!-- [END_EXCLUDE] -->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java8.HelloAppEngine" %>
+<%@ page import="com.example.appengine.java8.HelloAppEngine" %>
 <html>
 <head>
   <link href='//fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
@@ -32,7 +32,7 @@
       <td colspan="2" style="font-weight:bold;">Available Servlets:</td>
     </tr>
     <tr>
-      <td><a href='/home'>Hello App Engine</a></td>
+      <td><a href='/hello'>Hello App Engine</a></td>
     </tr>
   </table>
 

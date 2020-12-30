@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package java8;
+package com.example.appengine.java8;
 
 import com.google.appengine.api.utils.SystemProperty;
 import java.io.IOException;
