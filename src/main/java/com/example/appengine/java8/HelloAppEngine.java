@@ -32,7 +32,7 @@ public class HelloAppEngine extends HttpServlet {
       throws IOException {
     Properties properties = System.getProperties();
 
-    response.setContentType("home");
+    response.setContentType("home/html");
   }
 
   public static String getInfo() {
