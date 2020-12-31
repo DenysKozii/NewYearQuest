@@ -16,16 +16,25 @@
   ~ permissions and limitations under the License.
   --%>
 <!-- [END_EXCLUDE] -->
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-<%--  <link href='//fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>--%>
-  <title>Hello App Engine Standard Java 8</title>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header(value)">
+    <title>Tit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href='//fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Hello</h1>
-
-  <a href='/home'>Hello</a>
-
+<div class="container">
+    <a th:href="@{/start}" class="btn btn-primary">
+        <span>Start!</span>
+    </a>
+</div>
 </body>
+<div th:fragment="js-lb">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="/timer.js"></script>
+</div>
 </html>
